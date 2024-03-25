@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator Matematik</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>-- Kalkulator Matematik --</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card">
+                    <div class="content-header">
+                        <h2>'KATIK'</h2>
+                        <p>Calculating the area and perimeter of a square</p>
+                    </div>
+                    <div class="content-body">
+                        <div class="card">
+                            <h3>Square Area</h3>
+                            <div class="keterangan">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiWbVswQ5uYVHRkIiWPFgo4PuH0D_uuQ85I7e5mtzE5UQ9z6DF9D8NW9n3lSjtnnpHKtI&usqp=CAU" alt="Square Area Image" />
+                                <div>
+                                    <p>Multiplying the side length and the side width</p>
+                                    <p>L = s x s</p>
+                                    <p>s = square side</p>
+                                </div>
+                            </div>
+                            <form id="calculateArea">
+                                <label for="luasPersegiInput">Input Number</label>
+                                <div class="container-input">
+                                    <input type="number" id="luasPersegiInput" required />
+                                    <button type="submit">Count</button>
+                                    <button type="reset" id="resetLuas">Reset</button>
+                                </div>
+                            </form>
+                            <div id="resultCalculateArea"></div>
+                        </div>
+                        <div class="card">
+                            <h3>Square Perimeter</h3>
+                            <div class="keterangan">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiWbVswQ5uYVHRkIiWPFgo4PuH0D_uuQ85I7e5mtzE5UQ9z6DF9D8NW9n3lSjtnnpHKtI&usqp=CAU"
+                                    alt="Square Perimeter Image"
+                                />
+                                <div>
+                                    <p>Summing all sides of a square</p>
+                                    <p>K = 4 x s</p>
+                                    <p>s = square side</p>
+                                </div>
+                            </div>
+                            <form id="calculatePerimeter">
+                                <label for="kelilingPersegiInput">Input Number</label>
+                                <div class="container-input">
+                                    <input type="number" id="kelilingPersegiInput" required />
+                                    <button type="submit">Count</button>
+                                    <button type="reset" id="resetKeliling">Reset</button>
+                                </div>
+                            </form>
+                            <div id="resultCalculatePerimeter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy; 2024 <a href="https://github.com/adzkiyaqarina" style="color: white">Adzkiya Qarina Salsabila</a>.
+            </p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

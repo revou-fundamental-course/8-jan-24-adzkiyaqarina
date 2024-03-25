@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Katik Kalkulator Matematik</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Katik Kalkulator Matematik</h1>
+      <h2>Rumus Luas Persegi</h2>
+      <p>L = S x S</p>
+      <input type="number" id="sisi" placeholder="Masukkan nilai sisi">
+      <button onclick="hitungLuas()">Hitung Luas</button>
+      <h2 id="hasil"></h2>
+      <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <script>
+      function hitungLuas() {
+        var sisi = document.getElementById("sisi").value;
+        var hasil = sisi * sisi;
+        document.getElementById("hasil").innerHTML = "Luas: " + hasil;
+      }
+
+      function resetForm() {
+        document.getElementById("sisi").value = "";
+        document.getElementById("hasil").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KATIK (Kalkulator Matematik)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>KATIK (Kalkulator Matematik)</h1>
+      <h2>Rumus Luas Persegi</h2>
+      <p>L = S x S</p>
+      <input type="number" id="sisi" placeholder="Masukkan nilai sisi">
+      <button onclick="hitungLuas()">Hitung Luas</button>
+      <h2 id="hasil"></h2>
+      <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <script>
+      function hitungLuas() {
+        var sisi = document.getElementById("sisi").value;
+        var hasil = sisi * sisi;
+        document.getElementById("hasil").innerHTML = "Luas: " + hasil;
+      }
+
+      function resetForm() {
+        document.getElementById("sisi").value = "";
+        document.getElementById("hasil").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

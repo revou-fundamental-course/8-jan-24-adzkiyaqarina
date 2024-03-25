@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookshelf App</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="js/index.js" type="text/javascript" defer></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<span id="logo">Bookshelf App</span>
+					<ul>
+						<li><a href="#">Form</a></li>
+						<li><a href="#completed">Completed</a></li>
+						<li><a href="#uncompleted">Uncompleted</a></li>
+					</ul>
+				</nav>
+
+				<form action="#" id="form">
+					<h1>Add new book to your shelf</h1>
+					<p>
+						Helps make it easier to organize your book reading!
+					</p>
+
+					<div class="control">
+						<label for="title">Title</label>
+						<input
+							type="text"
+							id="title"
+							name="title"
+							required
+							placeholder="Book Title" />
+						<span class="help">
+							Complete the title of the book.
+						</span>
+					</div>
+
+					<div class="control">
+						<label for="author">Author</label>
+						<input
+							type="text"
+							id="author"
+							name="author"
+							required
+							placeholder="Book Author" />
+						<span class="help">
+							Name of the author of the book.
+						</span>
+					</div>
+
+					<div class="control">
+						<label for="year">Year</label>
+						<input type="number" id="year" name="year" required />
+						<span class="help">
+							Year of publication of the book.
+						</span>
+					</div>
+
+					<div class="control">
+						<div class="checkbox">
+							<input
+								type="checkbox"
+								id="isComplete"
+								name="isComplete" />
+							<label for="isComplete">Is Complete</label>
+						</div>
+						<span class="help">
+							Check if the book is completed.
+						</span>
+					</div>
+
+					<div class="action">
+						<button type="submit">Add Book</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<section id="shelf">
+			<div class="container">
+				<h2>Completed</h2>
+				<p class="description">
+					Congrats! You have done your reading.
+				</p>
+				<div id="completed">
+					<!-- filled with javascript -->
+				</div>
+
+				<h2>Uncompleted</h2>
+				<p class="description">
+					You have not done your book reading yet.
+				</p>
+				<div id="uncompleted">
+					<!--  filled with javascript -->
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>&copy; 2024 Bookshelf App - Adzkiya Qarina Salsabila B242041</p>
+		</footer>
+	</body>
+</html>
